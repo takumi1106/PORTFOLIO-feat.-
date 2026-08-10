@@ -1,4 +1,4 @@
-# POLTFOLIO
+# POLTFOLIO　feat.Goto Takumi
 
 就職活動用に制作したポートフォリオサイトです。
 
