@@ -13,6 +13,13 @@ works:
     alt: 日昇工業所の公式サイトの作品画像
     href: /works/portfolio
 
+  - title: MissionTube
+    label: 授業制作品 │ webアプリ
+    slug: missiontube
+    image: /image/missiontube_main.webp
+    alt: MissionTubeの作品画像
+    href: /works/missiontube
+
   - title: 小鳥たちのブログツリー
     label: 授業課題
     slug: blog
