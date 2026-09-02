@@ -20,6 +20,12 @@ works:
     alt: MissionTubeの作品画像
     href: /works/missiontube
 
+  - title: ランディングページ
+    label: 授業制作品
+    image: /image/lp_main.webp
+    alt: ランディングページの作品画像
+    href: /works/lp
+
   - title: 小鳥たちのブログツリー
     label: 授業課題
     slug: blog
