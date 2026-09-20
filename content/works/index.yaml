@@ -11,6 +11,12 @@ works:
     alt: 日昇工業所の公式サイトの作品画像
     href: /works/portfolio
 
+  - title: ECサイト（ネットショップ）
+    category: 授業制作品
+    image: /image/lp_main.webp
+    alt: ランディングページの作品画像
+    href: /works/EC
+
   - title: MissionTube
     label: 授業制作品 │ webアプリ
     image: /image/missiontube_main.webp
