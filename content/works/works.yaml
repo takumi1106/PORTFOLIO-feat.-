@@ -7,7 +7,7 @@ works:
     href: /works/nissyo
 
   - title: PORTFOLIO
-    label: 個人制作（ポートフォリオ）
+    label: 個人制作品 │ ポートフォリオ
     slug: portfolio
     image: /image/portfolio_main.webp
     alt: 日昇工業所の公式サイトの作品画像
@@ -34,14 +34,14 @@ works:
     href: /works/lp
 
   - title: 小鳥たちのブログツリー
-    label: 授業課題
+    label: 授業課題 │ ブログ
     slug: blog
     image: /image/blog_main.webp
     alt: ブログの作品画像
     href: /works/blog
 
   - title: 新校舎インタビュー動画
-    label: グループ制作
+    label: グループ制作品 │ 動画
     slug: school-movie
     image: /image/school-movie_main.webp
     alt: インタビュー動画の作品画像
