@@ -1,6 +1,6 @@
 ---
 title: ECサイト（ネットショップ）
-category: 授業制作品
+category: 授業制作品(現在非公開)
 date: 2026
 url: https://ec-shop-php.free.nf/08_shop/chapter2-7/product.php
 
