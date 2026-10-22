@@ -1,6 +1,6 @@
 works:
   - title: 日昇工業所｜公式サイト
-    label: 進級制作品
+    label: 進級制作品(現在非公開)
     slug: nissyo
     image: /image/nissyo_main.webp
     alt: 日昇工業所の公式サイトの作品画像
@@ -34,7 +34,7 @@ works:
     href: /works/lp
 
   - title: 小鳥たちのブログツリー
-    label: 授業課題 │ ブログ
+    label: 授業課題(現在非公開) │ ブログ
     slug: blog
     image: /image/blog_main.webp
     alt: ブログの作品画像

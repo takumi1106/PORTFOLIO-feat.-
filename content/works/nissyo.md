@@ -1,6 +1,6 @@
 ---
 title: 日昇工業所｜公式サイト
-category: 進級制作品
+category: 進級制作品(現在非公開)
 date: 2026
 url: https://goto-take-1106.secret.jp/nissyo/index.html
 
