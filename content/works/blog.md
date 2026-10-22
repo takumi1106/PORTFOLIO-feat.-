@@ -1,6 +1,6 @@
 ---
 title: 小鳥たちのブログツリー
-category: 授業制作(現在非公開)
+category: 授業制作
 date: 2025
 url: https://goto-take-1106.secret.jp/blog/
 
