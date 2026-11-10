@@ -85,7 +85,7 @@ export default function Home() {
                 </p>
                 <div className="top-about__profile">
                   <p className="birthplace"><span className="label">出身地</span>三重県</p>
-                  <p className="occupation"><span className="label">志望職種</span>Webプログラマー</p>
+                  <p className="occupation"><span className="label-field">関心分野</span>Web制作・運用／アプリ・システム開発／動作検証</p>
                 </div>
                 <div className="top-about__text">
                   <p>新しい技術を学び続け、<br />

@@ -917,14 +917,23 @@ $side-nav-gap: 3vw;
         }
 
         .label {
+            font-size: rem(15);
+            font-weight: bold;
             margin-right: rem(15);
         }
 
-        .birthplace {
+        .label-field {
+            display: block;
+            font-size: rem(15);
+            font-weight: bold;
             margin-bottom: rem(7);
+        }
+
+        .birthplace {
+            margin-bottom: rem(15);
 
             @include mq(desktop) {
-                margin-bottom: rem(10);
+                margin-bottom: rem(20);
             }
         }
 

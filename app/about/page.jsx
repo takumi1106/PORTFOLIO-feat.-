@@ -76,22 +76,22 @@ export default function AboutPage() {
                                     後藤 匠<span className="aboutpro__myname__sub"> (Goto Takumi)</span>
                                 </p>
                                 <div className="aboutpro__text">
-                                    <p>トライデントコンピュータ専門学校のWebデザイン学科2年生の後藤 匠です。Webプログラマーを志望し、新しい技術を学び続けながら実装を通した成長を大切にしています。</p>
+                                    <p>トライデントコンピュータ専門学校 Webデザイン学科2年の後藤匠です。学校ではWebサイト制作を中心に学び、Webアプリやモバイルアプリも作ってきました。制作中は自分で何度も操作して、迷わず使えるか、意図した画面に進めるかを確かめています。</p>
                                 </div>
                             </div>
                         </div>
                         <div className="aboutpro__list list">
                             <div className="aboutpro__item list__item">
                                 <h3 className="aboutpro__item-title list__title">生年月日</h3>
-                                <p className="aboutpro__item-text list__text">2004/11/06 (21歳)</p>
+                                <p className="aboutpro__item-text list__text">2004/11/06 (22歳)</p>
                             </div>
                             <div className="aboutpro__item list__item">
                                 <h3 className="aboutpro__item-title list__title">出身地</h3>
                                 <p className="aboutpro__item-text list__text">三重県明和町</p>
                             </div>
                             <div className="aboutpro__item list__item">
-                                <h3 className="aboutpro__item-title list__title">志望職種</h3>
-                                <p className="aboutpro__item-text list__text">フロントエンドエンジニア</p>
+                                <h3 className="aboutpro__item-title list__title">興味のある分野</h3>
+                                <p className="aboutpro__item-text list__text">Web制作・運用／アプリ・システム開発／動作検証</p>
                             </div>
                         </div>
                         <div className="aboutpro__item aboutpro__school list__item">
@@ -118,9 +118,8 @@ export default function AboutPage() {
                         <h3 className="ideal__catch">「学び、挑戦し、<br /><span className="ideal__indent">成長し続ける人へ」</span>
                         </h3>
                         <div className="ideal__text">
-                            <p>新しい技術を学び続けることを当たり前にし、Web技術だけでなくさまざまな分野にも挑戦しながら成長していきたいと考えています。</p>
-                            <p>技術は常に進化するからこそ、トレンドを追うだけではなく、仕組みまで理解し、自分の力として身につけることを大切にしています。</p>
-                            <p>学んだ技術を実際の開発に活かし、幅広い技術を身につけながら、ユーザーにとって価値のあるサービスを届けられるエンジニアを目指しています。</p>
+                            <p>新しい技術を学ぶときは、実際に手を動かしながら、どういう仕組みで動いているのかを理解することを大切にしています。</p>
+                            <p>Webサイトやアプリを作る中で、ひと通り形になってから自分で使ってみると、制作中には気づかなかった使いにくさが見えてくることがあります。これからは、Webサイトの制作に加えて、公開後の運用や、アプリが思ったとおりに動くかを確かめる仕事にも携わりたいです。</p>
                         </div>
                     </div>
                 </section>
@@ -162,11 +161,9 @@ export default function AboutPage() {
                     <h2 className="comment__title sub-title">COMMENT</h2>
                     <div className="comment__inner">
                         <div className="comment__text">
-                            <p>ポートフォリオをご覧いただきありがとうございます。<br />最新技術を学び続け、どんなに難しい技術も迷わず使いこなせるエンジニアを目指しています。</p>
-                            <p>トライデントコンピュータ専門学校Webデザイン学科2年の後藤 匠です。</p>
-                            <p>制作では、どんな技術にも臆せず挑戦し、学んだことを実装に活かしながら、できることを着実に広げていくことを大切にしています。</p>
-                            <p>趣味であるカラオケや麻雀でも、上達のために試行錯誤することが好きで、その「うまくなりたい」という気持ちはエンジニアとしての姿勢にも通じています。</p>
-                            <p>難しい技術ほど、迷わず向き合って自分のものにする。そんなエンジニアを目指して、日々成長しています。</p>
+                            <p>ポートフォリオをご覧いただき、ありがとうございます。</p>
+                            <p>趣味はカラオケと麻雀です。どちらも「もう少しうまくなりたい」と思って、いろいろ試すのが好きです。制作をしているときも、画面の見え方や操作のしやすさが気になって、少しずつ手を加えているうちに、気づけば時間がたっていることがあります。</p>
+                            <p>作品ページでは、学校や個人で取り組んできた制作物を紹介しています。それぞれの作品でどんなところを工夫したのかも、見ていただけたらうれしいです。</p>
                         </div>
                     </div>
                 </section>

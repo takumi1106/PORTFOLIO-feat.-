@@ -815,14 +815,22 @@ a:focus-visible,
   }
 }
 .top-about__profile .label {
+  font-size: 0.9375rem;
+  font-weight: bold;
   margin-right: 0.9375rem;
 }
-.top-about__profile .birthplace {
+.top-about__profile .label-field {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: bold;
   margin-bottom: 0.4375rem;
+}
+.top-about__profile .birthplace {
+  margin-bottom: 0.9375rem;
 }
 @media (width >= 1200px) {
   .top-about__profile .birthplace {
-    margin-bottom: 0.625rem;
+    margin-bottom: 1.25rem;
   }
 }
 .top-about__profile .occupation {
