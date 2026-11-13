@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SummerTriangle from "@/components/SummerTriangle";
-import { getWorksList } from "@/lib/markdown";
+
 import MobileMenu from "@/components/MobileMenu";
 import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -20,8 +20,7 @@ export const metadata = {
     title: "WORKS",
 };
 
-export default function UranaiPage() {
-    const works = getWorksList();
+export default function UranaiWork({ works }) {
 
     return (
         <>

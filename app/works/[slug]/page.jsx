@@ -1,3 +1,5 @@
+import UranaiWork from "@/components/UranaiWork";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import SummerTriangle from "@/components/SummerTriangle";
 import { getWorkData, getWorksList } from "@/lib/markdown";
@@ -21,20 +23,21 @@ export const metadata = {
     title: "WORKS",
 };
 
+function processImageClass(item) {
+    if (item.imageBesideText) return "process__img process__code-img";
+    if (item.images.length === 1 && !item.title && !item.lead && !item.desc?.length && !item.points?.length) {
+        return "process__img process__single-img";
+    }
+    return "process__img process__img-design";
+}
+
 export default async function WorkDetailPage({ params }) {
     const { slug } = await params;
     const work = await getWorkData(slug);
-    const works = getWorksList();
+    const works = await getWorksList();
 
-    const renderParagraphs = (value) => {
-        if (Array.isArray(value)) {
-            return value.map((text, i) => <p key={`p-${i}`}>{text}</p>);
-        }
-        if (value) {
-            return <p>{value}</p>;
-        }
-        return null;
-    };
+    if (!work) notFound();
+    if (work.legacyUranai) return <UranaiWork works={works} />;
 
     return (
         <>
@@ -154,14 +157,14 @@ export default async function WorkDetailPage({ params }) {
                     <div className="process__inner">
                         {work.process?.filter((item) => item.show !== false).map((item, i) => (
                             <div className="process__item list__item" key={`${item.title}-${i}`}>
-                                <h3 className="process__item-title list__title">{item.title}</h3>
+                                {item.title && <h3 className="process__item-title list__title">{item.title}</h3>}
 
                                 <div className="process__item-inner">
-                                    {item.type === "research" && (
+                                    {(item.type === "research" || item.type === "visual") && (
                                         <>
                                             {item.lead && (
-                                                <div className="process__text process__research-text">
-                                                    <p>{item.lead}</p>
+                                                <div className={`process__text ${item.points?.length || item.type === "research" ? "process__research-text" : "process__design-lead"}`}>
+                                                    <p style={{ whiteSpace: "pre-line" }}>{item.lead}</p>
                                                 </div>
                                             )}
 
@@ -176,15 +179,9 @@ export default async function WorkDetailPage({ params }) {
                                     )}
 
                                     {item.type === "visual" && (
-                                        <>
-                                            {item.lead && (
-                                                <div className="process__text process__design-lead">
-                                                    <p>{item.lead}</p>
-                                                </div>
-                                            )}
-
+                                        <div className={item.imageBesideText ? "process__body" : undefined}>
                                             {Array.isArray(item.images) && item.images.length > 0 && (
-                                                <figure className="process__img process__img-design">
+                                                <figure className={processImageClass(item)}>
                                                     {item.images.map((src, index) => (
                                                         <img key={`${src}-${index}`} src={src} alt="" loading="lazy" />
                                                     ))}
@@ -192,17 +189,18 @@ export default async function WorkDetailPage({ params }) {
                                             )}
 
                                             {Array.isArray(item.desc) && item.desc.length > 0 && (
-                                                <div className="process__text process__design-desc">
+                                                <div className={item.imageBesideText ? "process__text process__code-text" : "process__text process__design-desc"}>
                                                     {item.desc.map((text, index) => (
                                                         <p key={`${item.title}-desc-${index}`}>{text}</p>
                                                     ))}
                                                 </div>
                                             )}
-                                        </>
+                                        </div>
                                     )}
 
                                     {item.type === "coding" && (
                                         <>
+                                            {item.intro && <p className="process__text">{item.intro}</p>}
                                             <div className={`process__body ${item.code ? "is-code" : ""}`}>
                                                 <figure
                                                     className={`process__img ${item.code ? "process__code-wrap" : "process__code-img"
@@ -210,7 +208,7 @@ export default async function WorkDetailPage({ params }) {
                                                 >
                                                     {item.code ? (
                                                         <SyntaxHighlighter
-                                                            language="javascript"
+                                                            language={item.language || "javascript"}
                                                             style={oneDark}
                                                             className="process__code"
                                                             showLineNumbers
@@ -255,7 +253,7 @@ export default async function WorkDetailPage({ params }) {
                                                     >
                                                         {item.subCode ? (
                                                             <SyntaxHighlighter
-                                                                language="javascript"
+                                                                language={item.subLanguage || item.language || "javascript"}
                                                                 style={oneDark}
                                                                 className="process__code"
                                                                 showLineNumbers

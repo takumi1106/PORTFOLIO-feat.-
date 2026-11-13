@@ -18,8 +18,8 @@ export const metadata = {
     title: "WORKS",
 };
 
-export default function WorksPage() {
-    const works = getWorksList();
+export default async function WorksPage() {
+    const works = await getWorksList();
 
     return (
         <>

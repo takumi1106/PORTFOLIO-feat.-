@@ -19,8 +19,8 @@ export const metadata = {
     title: "ABOUT",
 };
 
-export default function AboutPage() {
-    const works = getWorksList();
+export default async function AboutPage() {
+    const works = await getWorksList();
     return (
         <>
             <SummerTriangle />

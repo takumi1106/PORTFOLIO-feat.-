@@ -14,8 +14,8 @@ export const notoSerif = Noto_Serif_JP({
   weight: ["400", "700"],
 });
 
-export default function Home() {
-  const works = getWorksList();
+export default async function Home() {
+  const works = await getWorksList();
   const topWorks = works.slice(0, 4);
 
   return (
